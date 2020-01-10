@@ -6,7 +6,11 @@ import {HttpClient} from '@angular/common/http';
 export class DataService {
 
   constructor(private http:HttpClient) { }
-  getData(url){
-    return this.http.get(url);
+  getData(){
+    return this.http.get('http://restcountries.eu/rest/v2/all');
+  }
+  getContent()
+  {
+    return this.http.get('https://jsonplaceholder.typicode.com/users');
   }
 }

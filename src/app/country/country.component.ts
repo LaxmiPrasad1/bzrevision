@@ -14,7 +14,7 @@ export class CountryComponent implements OnInit {
   }
   ngOnInit()
   {
-    this.ds.getData(this.c_url).subscribe(d => {
+    this.ds.getData().subscribe(d => {
       this.data = d;
       console.log(this.data);
     })
